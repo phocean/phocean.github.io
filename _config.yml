@@ -1,10 +1,10 @@
 title: "Phocean.net"
 description: "Homepage of Phocean"
-url: "https://phocean.github.io"
+url: "https://phocean.net"
 author:
   name: "Jean-Christophe Baptiste"
   email: "jc@phocean.net"
-  url: "https://phocean.github.io"
+  url: "https://phocean.net"
 
 baseurl: /
 
