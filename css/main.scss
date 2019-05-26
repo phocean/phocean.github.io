@@ -1,0 +1,58 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+//Import
+@import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss";
+
+tab { padding-left: 4em; }
+
+tagcloud {
+  padding: 1em;
+}
+
+.cloud
+{
+  list-style:none;
+  width:90%;
+  padding:0;
+
+  & li
+  {
+    float:left;
+    margin:1px 10px;
+    font-size:14px;
+    min-height:35px;
+    line-height:30px;
+
+    a {
+      text-decoration:none;
+      color:#DB0058;
+      font-family:Arial;
+      font-weight:bold;
+
+      transition:opacity 0.8s;
+      -webkit-transition:opacity 0.8s;
+      -moz-transition:opacity 0.8s;
+      -o-transition:opacity 0.8s;
+    }
+  }
+
+  &:hover li a
+  {
+    opacity:0.3;
+
+    &:hover {
+      color:#0B61A4;
+      opacity:1;
+    }
+  }
+
+  // Generate tag1 to tag25 classes
+  @for $i from 1 through 25 {
+    & li.tag#{$i} {
+      font-size: 0.1 * ($i - 1) + 1em;
+    }
+  }
+}
+

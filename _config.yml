@@ -1,0 +1,28 @@
+title: "Phocean.net"
+description: "Homepage of Phocean"
+url: "https://phocean.github.io"
+author:
+  name: "Jean-Christophe Baptiste"
+  email: "jc@phocean.net"
+  url: "https://phocean.github.io"
+
+baseurl: /
+
+defaults:
+  - scope:
+      path: "img"
+    values:
+      image: true
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-fontello
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: true
+custom_nav_footer: false
+reverse: false
