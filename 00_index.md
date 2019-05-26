@@ -16,7 +16,7 @@ This page is just a hub linking my online activities.
 ### Contributions:
 
 - [New blog](https://phocean.net/blog.html)
-- Blog archive on the Wayback Machine : [phocean.net](https://phocean.github.io/blog-archive/)
+- Blog archive on the Wayback Machine : [phocean.net](https://phocean.net/blog-archive/)
 - Scripts and code on Github: [phocean](https://github.com/phocean)
 
 ### Social networks:
