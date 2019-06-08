@@ -1,7 +1,7 @@
 ---
 weight: 300
 entry: Tags
-layout: tag_index
+layout: page
 title: Tags
 ---
 
