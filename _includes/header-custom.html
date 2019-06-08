@@ -9,10 +9,12 @@
     <span id="nav-links" class="absolute right bottom">
       <!-- Nav pages -->
       {% assign pages = site.pages | sort:"weight"  %}
-	    {% for page in pages %}
-	      {% if page.layout == "page" %}
-	        <a href="{% if site.baseurl == "/" %}{{ page.url }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}" title="{{ page.entry }}">{{ page.entry }}</a>
-	      {% endif %}
+      {% for page in pages %}
+        {%- unless page.url contains 'page' -%}
+          {% if page.layout == "page" %}
+            <a href="{% if site.baseurl == "/" %}{{ page.url }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}" title="{{ page.entry }}">{{ page.entry }}</a>
+          {% endif %}
+        {%- endunless -%}
 	    {% endfor %}
       
       <!-- Nav links -->

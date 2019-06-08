@@ -27,4 +27,4 @@ custom_header: true
 custom_nav_footer: false
 reverse: false
 paginate: 1
-paginate_path: "/blog/:num/"
+paginate_path: "/blog/page:num/"
