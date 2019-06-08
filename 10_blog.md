@@ -4,7 +4,6 @@ weigth: 200
 entry: Blog
 title: Phocean's Infosec Blog
 description: blog, hacking, pentest, forensics, infosec
-permalink: blog.html
 ---
 
 {% for post in paginator.posts %}
