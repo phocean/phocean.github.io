@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Blog migration: from Wordpress to github-pages (Jekyll)
+title: Blog migration, from Wordpress to github-pages (Jekyll)
 categories: System
 tags: System,Jekyll,Blog,markdown,httrack
 ---
 
-## My motive
+### My motive
 
 The *Wordpress CMS* had served me well over the time. I had used it for a decade or so.
 
@@ -18,7 +18,7 @@ I never had any trouble with it, but it was becoming harder and harder to mainta
 These items caused much friction with my busy schedule and my workflow, vastely based around `git` and `markdown`.
 
 
-## Advantages of a static website
+### Advantages of a static website
 
 First, there is an obvious advantage regarding hosting. Rendering static webpages is light and fast, so there are many cheap or even free hosting solutions.
 
@@ -32,7 +32,7 @@ Finally, it is perfectly aligned with my workflow. I can now just fire up *Visua
 It is much more flexible and time saving, so I hope it will help me to publish from time to time.
 
 
-## The migration: what did not work
+### The migration: what did not work
 
 By intuition, I thought that converting from the source, *Wordpress*, would give the best results.
 
@@ -46,7 +46,7 @@ Unfortunately, it has a few caveats: some pages are missing and the performances
 Interestingly, there is a service [Wayback Machine Downloader](https://www.waybackmachinedownloader.com) which, for a small fee, offers to take care of the download. I tried the demo, but again experienced some breakage, so I was not convinced. 
 
 
-## What worked: downloading with `httrack`.
+### What worked: downloading with `httrack`.
 
 A good old tool for scraping websites is `httrack`.
 
@@ -60,6 +60,6 @@ I obtained a local archive, wich mostly worked when opened in a browser. However
 
 But nothing insurmountable: 15 minutes later, after `sed`, regex and eventually `find`, I got a perfect archive. For free.
 
-## Conclusion
+### Conclusion
 
 That's it, nothing special but I wanted to share this experience. I now hope to blog slightly more often. If you have some commets, you can find me on [twitter](https://twitter.com/_phocean) or [mastodon](https://mastodon.xyz/@phocean).
