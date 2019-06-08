@@ -1,8 +1,7 @@
 ---
-weigth: 100
+weight: 300
 entry: Tags
 layout: page
-permalink: /tags/
 title: Tags
 ---
 

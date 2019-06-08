@@ -1,6 +1,6 @@
 ---
 layout: page
-weigth: 10
+weight: 10
 entry: Home
 title: Phocean's homepage
 description: Jean-Christophe Baptiste, blog, pentest, inforensique, hacking, formation, formateur, consultant, pentesteur, informatique, infosec, cyber-criminalité
