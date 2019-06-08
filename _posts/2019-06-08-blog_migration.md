@@ -2,7 +2,12 @@
 layout: post
 title: Blog migration, from Wordpress to github-pages (Jekyll)
 categories: System
-tags: System,Jekyll,Blog,markdown,httrack
+tags:
+- System
+- Jekyll
+- Blog
+- markdown
+- shttrack
 ---
 
 ### My motive
