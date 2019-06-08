@@ -2,8 +2,6 @@
 layout: page
 weight: 200
 entry: Blog
-title: Phocean's Infosec Blog
-description: blog, hacking, pentest, forensics, infosec
 ---
 
 {% for post in paginator.posts %}
