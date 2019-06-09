@@ -19,26 +19,16 @@ title: Tags
 {% assign all_tags = all_tags | sort %}
 {% assign all_tags = all_tags | uniq %}
 
-<div class="tags-expo">
-  <div class="tags-expo-list">
-    {% for tag in site.tags %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+{% for tag in site.tags %}
+  <h3 id="{{ tag[0] | slugify }}">{{ tag | first }}</h3>
+  <ul class="tags-expo-posts">
+    {% for post in tag[1] %}
+    <a href="{{ post.url }}">
+    <li>
+      {{ post.title }}
+    </li>
+    </a>
+    ({{ post.date | date: "%Y/%m/%d" }})
     {% endfor %}
-  </div>
-  <hr/>
-  <div class="tags-expo-section">
-    {% for tag in site.tags %}
-    <h3 id="{{ tag[0] | slugify }}">{{ tag | first }}</h3>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-      <li>
-        {{ post.title }}
-      &nbsp;<small class="post-date">({{ post.date | date: "%d/%m/%y" }})</small>
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </div>
-</div>
+  </ul>
+{% endfor %}
