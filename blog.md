@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 200
-entry: Blog
+entry: Posts
 ---
 
 <ul>
