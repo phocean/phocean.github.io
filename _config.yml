@@ -15,7 +15,7 @@ defaults:
       image: true
 
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-fontello
 
