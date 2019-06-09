@@ -6,8 +6,8 @@ entry: Categories
 ---
 
 {% for category in site.categories %}
-    <a href="/category/{{ category[0] }}">
-        <h2>{{ category[0] }}</h2>
+    <a href="/category/{{ category[0] | slugify }}">
+        <h3>{{ category[0] | capitalize }}</h3>
     </a>
     <ul>
         {% for post in category[1] %}
@@ -17,4 +17,4 @@ entry: Categories
         </li>
         {% endfor %}
     </ul>
-{% endfor %}
+{% endfor %}s
