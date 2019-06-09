@@ -22,12 +22,8 @@ plugins:
 version: "1.0.0"
 
 # Options
-permalink: /:year/:month/:title.html
+permalink: pretty
 custom_header: true
 custom_nav_footer: false
 reverse: false
 
-str_next_page: "Next"  
-str_previous_page: "Previous"
-pagination_nr: 1
-paginate_path: /blog/page:num/
