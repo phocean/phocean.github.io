@@ -5,10 +5,8 @@
 
 <body>
 	<div id="wrap">
-	  	
 	  	<!-- Navigation -->
-	  	{% include menu.html %}
-    
+	    {% include menu.html %}
     <!-- Icon menu -->
 	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
 	  	<div id="menu"></div>
@@ -20,6 +18,10 @@
       {% else %}
         {% include header.html %}
       {% endif %}
+    
+    <span>
+        <h2>{{ page.title }}</h2>
+    </span>
 
     <!-- Main content -->
 	  <div id="container">

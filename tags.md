@@ -5,8 +5,6 @@ layout: page
 title: Tags
 ---
 
-<h2>Tags</h2>
-
 <ul>
 {% assign tags_list = site.tags %}
     {% for tag in tags_list %}

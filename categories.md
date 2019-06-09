@@ -5,24 +5,22 @@ layout: page
 title: Categories
 ---
 
-<h2>Categories</h2>
-
 <ul>
 {% assign categories_list = site.categories %}
   {% if categories_list.first[0] == null %}
     {% for category in categories_list %}
-      <li><a href="#{{ category | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a></li>
+      <li><a href="#{{ category | slugify }}">{{ category | upcase }} ({{ site.tags[category].size }})</a></li>
     {% endfor %}
   {% else %}
     {% for category in categories_list %}
-      <li><a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
+      <li><a href="#{{ category[0] | slugify }}">{{ category[0] | upcase }} ({{ category[1].size }})</a></li>
     {% endfor %}
   {% endif %}
 {% assign categories_list = nil %}
 </ul>
 
 {% for category in site.categories %}
-  <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</h3>
+  <h3 id="{{ category[0] | slugify }}">{{ category[0] | upcase }}</h3>
   <ul>
     {% assign pages_list = category[1] %}
     {% for post in pages_list %}

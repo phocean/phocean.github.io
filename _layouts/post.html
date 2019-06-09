@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-<article id="post-page">
-	<h2>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h2>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+<article id="post-page">	
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}
+		| {% for cat in page.categories %} <i><a href="{{ site.url }}/categories/#{{ cat | uri_escape }}">{{ cat | upcase }}</a></i>, {% endfor %} 
+		| {% for tag in page.tags %} <i><a href="{{ site.url }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a></i>, {% endfor %}
+	</time>
 	<div class="content">
 
 		{{ content }}
@@ -14,7 +16,7 @@ layout: default
 	      <p>Read more:</p>
 	      <ul class="tag-list">
 		{% for tag in page.tags %}
-		<li><a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">{{ tag }}</a></li>
+		<li><a href="{{ site.url }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a></li>
 		{% endfor %}
 	      </ul>
 	    </footer>
