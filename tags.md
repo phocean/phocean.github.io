@@ -19,14 +19,6 @@ title: Tags
 {% assign all_tags = all_tags | sort %}
 {% assign all_tags = all_tags | uniq %}
 
-<ul class="tag-list">
-    {% for tag in all_tags %}
-        <li><a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">{{ tag }}</a></li>
-    {% endfor %}
-
-</ul>
-
-
 <div class="tags-expo">
   <div class="tags-expo-list">
     {% for tag in site.tags %}
@@ -36,7 +28,7 @@ title: Tags
   <hr/>
   <div class="tags-expo-section">
     {% for tag in site.tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
+    <h3 id="{{ tag[0] | slugify }}">{{ tag | first }}</h3>
     <ul class="tags-expo-posts">
       {% for post in tag[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
