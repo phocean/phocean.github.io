@@ -15,7 +15,7 @@ This is just my home page, with links to my online activities.
 
 ### Contributions:
 
-- [My blog](https://phocean.net/blog.html)
+- **My blog**, just here!
 - Blog archive: [phocean.net](https://phocean.net/blog-archive/)
 - Scripts and code on Github: [phocean](https://github.com/phocean)
 
