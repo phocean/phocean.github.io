@@ -3,7 +3,7 @@ layout: post
 title: Blog migration, from Wordpress to github-pages (Jekyll)
 categories: System
 tags: System
-permalink: blog-migration
+categories: System
 ---
 
 ### My motive

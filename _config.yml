@@ -23,8 +23,18 @@ plugins:
 version: "1.0.0"
 
 # Options
+permalink: /:year/:month/:title.html
 custom_header: true
 custom_nav_footer: false
 reverse: false
-paginate: 1
-paginate_path: "/blog/page:num/"
+
+pagination:
+  enabled: true
+  per_page: 3
+  offset: 2
+  permalink: '/blog/page:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
