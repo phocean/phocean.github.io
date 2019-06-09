@@ -19,9 +19,9 @@ defaults:
       image: true
   - scope:
       path: ""
-      type: category
+      type: categories
     values:
-      layout: "category"
+      layout: category
 
 plugins:
   - jekyll-sitemap
