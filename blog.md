@@ -7,7 +7,7 @@ entry: Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">[{{ post.category }}]{{ post.title }}</a>
+      <a href="{{ post.url }}">[{{ post.categories }}]{{ post.title }}</a>
       ({{ post.date | date: "%Y/%m/%d" }})
     </li>
   {% endfor %}
