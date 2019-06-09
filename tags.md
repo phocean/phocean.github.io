@@ -1,5 +1,5 @@
 ---
-weight: 300
+weight: 400
 entry: Tags
 layout: page
 title: Tags
@@ -21,7 +21,7 @@ title: Tags
 
 {% for tag in site.tags %}
   <h3 id="{{ tag[0] | slugify }}">{{ tag | first }}</h3>
-  <ul class="tags-expo-posts">
+  <ul>
     {% for post in tag[1] %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
