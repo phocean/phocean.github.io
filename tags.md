@@ -23,12 +23,10 @@ title: Tags
   <h3 id="{{ tag[0] | slugify }}">{{ tag | first }}</h3>
   <ul class="tags-expo-posts">
     {% for post in tag[1] %}
-    <a href="{{ post.url }}">
     <li>
-      {{ post.title }}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      ({{ post.date | date: "%Y/%m/%d" }})
     </li>
-    </a>
-    ({{ post.date | date: "%Y/%m/%d" }})
     {% endfor %}
   </ul>
 {% endfor %}
