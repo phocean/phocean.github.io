@@ -24,8 +24,8 @@ title: Tags
   <ul>
     {% for post in tag[1] %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
       <i>{{ post.date | date: "%Y/%m/%d" }}</i>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>

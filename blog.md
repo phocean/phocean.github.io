@@ -7,9 +7,9 @@ entry: Posts
 <ul>
   {% for post in site.posts %}
     <li>
-      [{{ post.categories }}]
+      {{ post.categories | capitalize }}
+      <i>{{ post.date | date: "%Y/%m/%d" }}</i>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      ({{ post.date | date: "%Y/%m/%d" }})
     </li>
   {% endfor %}
 </ul>
