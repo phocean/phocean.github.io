@@ -8,12 +8,9 @@ author:
 
 baseurl: /
 
-# Liste des catégories
 collections:
   category:
-    output: true # générer la page HTML
-    permalink: /:collection/:name/
-    # exemple -> /category/informatique/
+    output: true
 
 defaults:
   - scope:
@@ -25,7 +22,6 @@ defaults:
       type: category
     values:
       layout: "category"
-      # layout utilisé -> _layouts/category
 
 plugins:
   - jekyll-sitemap
