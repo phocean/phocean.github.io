@@ -8,20 +8,20 @@ author:
 
 baseurl: /
 
-collections:
-  category:
-    output: true
+#collections:
+#  category:
+#    output: true
 
 defaults:
   - scope:
       path: "img"
     values:
       image: true
-  - scope:
-      path: ""
-      type: categories
-    values:
-      layout: category
+#  - scope:
+#      path: ""
+#      type: categories
+#    values:
+#      layout: category
 
 plugins:
   - jekyll-sitemap
