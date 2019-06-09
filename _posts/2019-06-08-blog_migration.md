@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Blog migration, from Wordpress to github-pages (Jekyll)
-categories: System
+categories: system
 tags:
-- Jekyll
+- jekyll
 - blogging
 - workflow
 ---

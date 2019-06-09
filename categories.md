@@ -1,6 +1,5 @@
 ---
 weight: 300
-entry: Categories
 layout: page
 title: Categories
 ---
