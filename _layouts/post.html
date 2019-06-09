@@ -3,8 +3,8 @@ layout: default
 ---
 <article id="post-page">	
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}
-		| {% for cat in page.categories %} <i><a href="{{ site.url }}/categories/#{{ cat | uri_escape }}">{{ cat | upcase }}</a></i>, {% endfor %} 
-		| {% for tag in page.tags %} <i><a href="{{ site.url }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a></i>, {% endfor %}
+		| {% for cat in page.categories %} <i><a href="{{ site.url }}/categories/#{{ cat | uri_escape }}">{{ cat | upcase }}</a></i> {% endfor %} 
+		| {% for tag in page.tags %} <i><a href="{{ site.url }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a></i> {% endfor %}
 	</time>
 	<div class="content">
 
