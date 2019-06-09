@@ -1,8 +1,8 @@
 ---
 weight: 300
+entry: Categories
 layout: page
 title: Categories
-entry: Categories
 ---
 
 {% for category in site.categories %}
@@ -17,4 +17,4 @@ entry: Categories
         </li>
         {% endfor %}
     </ul>
-{% endfor %}s
+{% endfor %}
