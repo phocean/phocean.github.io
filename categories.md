@@ -6,7 +6,7 @@ entry: Categories
 ---
 
 {% for category in site.categories %}
-    <a href="/category/{{ category[0] | slugify }}">
+    <a href="/category/{{ category[0] }}">
         <h2>{{ category[0] }}</h2>
     </a>
     <ul>
