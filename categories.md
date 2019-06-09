@@ -2,6 +2,7 @@
 weight: 300
 layout: page
 title: Categories
+entry: Categories
 ---
 
 {% for category in site.categories %}
