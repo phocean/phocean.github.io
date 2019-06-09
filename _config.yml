@@ -23,10 +23,6 @@ defaults:
 #    values:
 #      layout: category
 
-plugins:
-#  - jekyll-sitemap
-  - jekyll-fontello
-
 # Custom variables
 version: "1.0.0"
 
