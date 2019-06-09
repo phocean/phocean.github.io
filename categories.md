@@ -10,11 +10,11 @@ title: Categories
         <h2>{{ category[0] }}</h2>
     </a>
     <ul>
-    {% for post in site.categories[page.tag] %}
+        {% for post in category[1] %}
         <li>
             <i>{{ post.date | date: "%Y/%m/%d" }}</i>
             <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
-    {% endfor %}
+        {% endfor %}
     </ul>
 {% endfor %}
