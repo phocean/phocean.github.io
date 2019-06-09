@@ -15,7 +15,6 @@ defaults:
       image: true
 
 plugins:
-  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-fontello
 
@@ -28,13 +27,7 @@ custom_header: true
 custom_nav_footer: false
 reverse: false
 
-pagination:
-  enabled: true
-  per_page: 3
-  offset: 2
-  permalink: '/blog/page:num/'
-  title: ':title - page :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-
+str_next_page: "Next"  
+str_previous_page: "Previous"
+pagination_nr: 1
+paginate_path: /blog/page:num/
