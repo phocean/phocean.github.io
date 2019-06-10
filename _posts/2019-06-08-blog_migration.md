@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blog migration, from Wordpress to github-pages (Jekyll)
+description: Thoughts and feedbacks about migrating a website from static to dynamic contents.
 categories: system
 tags:
 - jekyll
