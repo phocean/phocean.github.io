@@ -23,6 +23,9 @@ defaults:
 #    values:
 #      layout: category
 
+plugins:
+  - jekyll-sitemap
+
 # Custom variables
 version: "1.0.0"
 
