@@ -1,8 +1,8 @@
 ---
 layout: page
 weight: 10
-entry: Home
-title: Home
+entry: about
+title: about
 tags: homepage, profile, contact
 ---
 
